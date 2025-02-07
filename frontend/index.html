@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendário Anual de Sobrecarga</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="titulo">Calendário Anual de Sobrecarga</h1>
+
+    <div class="selector-container">
+      <div class="selector-group">
+        <label for="student-selector">Selecione o Estudante:</label>
+        <select id="student-selector">
+          <option value="" disabled selected>Selecione um estudante</option>
+        </select>
+      </div>
+
+      <div class="description">
+        <p><strong>Legenda de Sobrecarga:</strong></p>
+        <ul>
+          <span style="background-color: #ccffcc; padding: 2px 5px">Baixo</span
+          >: 0 a 1 hora
+          <span style="background-color: #ffff99; padding: 2px 5px">Média</span
+          >: 1 a 2 horas
+          <span style="background-color: #ffcc99; padding: 2px 5px">Alta</span
+          >: 2 a 3 horas
+          <span
+            style="background-color: #ff6666; padding: 2px 5px; color: white"
+            >Altíssima</span
+          >: Maior que 3 horas
+        </ul>
+      </div>
+    </div>
+
+    <div id="calendar" class="calendar"></div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Detalhes da Sobrecarga</h2>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
